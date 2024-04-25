@@ -10,7 +10,7 @@ import (
 
 // Função para gerar a senha
 func generatePassword(length int) string {
-	const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+,.?/:;{}[]~"
+	const chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*"
 	rand.Seed(time.Now().UnixNano())
 
 	password := make([]byte, length)
