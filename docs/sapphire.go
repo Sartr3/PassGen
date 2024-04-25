@@ -40,7 +40,7 @@ func passwordHandler(w http.ResponseWriter, r *http.Request) {
 func main() {
   // Mapeia o html
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-		http.ServeFile(w, r, "face.htm")
+		http.ServeFile(w, r, "docs/face.htm")
 	})
 
 	// Mapeia a rota
